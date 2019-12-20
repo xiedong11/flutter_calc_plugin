@@ -11,4 +11,13 @@ class FlutterCalcPlugin {
     return version;
   }
 
+  /**
+   *计算两个数的和
+   */
+  static Future<String>  getResult(int a, int b) async {
+    Map<String, dynamic> map = {"a": a, "b": b};
+    String result = await _channel.invokeMethod("getResult", map);
+    print(result+"----------aa--");
+    return result;
+  }
 }
