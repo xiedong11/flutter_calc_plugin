@@ -14,16 +14,22 @@ class MyApp extends StatefulWidget {
 class _MyAppState extends State<MyApp> {
   String _platformVersion = 'Unknown';
   String addResult = '';
+  TextEditingController _addNumber1Controller,_addNumber2Controller;
 
   @override
   void initState() {
     super.initState();
+    _addNumber1Controller = TextEditingController();
+    _addNumber2Controller = TextEditingController();
   }
 
-  Future<void> getAddResult(int a, int b) async {
+  Future<void> getAddResult() async {
+    int addNumber1= int.parse(_addNumber1Controller.value.text);
+    int addNumber2=int.parse(_addNumber2Controller.value.text);
+
     String result = '';
     try {
-      result = await FlutterCalcPlugin.getResult(a, b);
+      result = await FlutterCalcPlugin.getResult(addNumber2, addNumber1);
     } on PlatformException {
       result = '未知错误';
     }
@@ -57,28 +63,51 @@ class _MyAppState extends State<MyApp> {
         ),
         body: Center(
             child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: <Widget>[
-            MaterialButton(
-              color: Colors.amber,
-              child: Text("获取系统版本"),
-              onPressed: () {
-                initPlatformState();
-              },
-            ),
-            Text('当前系统版本 : $_platformVersion\n'),
-            SizedBox(height: 30),
-            Text("计算 36+25=？"),
-            MaterialButton(
-              color: Colors.amber,
-              child: Text("结果等于"),
-              onPressed: () {
-                getAddResult(36, 25);
-              },
-            ),
-            Text(addResult),
-          ],
-        )),
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: <Widget>[
+                MaterialButton(
+                  color: Colors.amber,
+                  child: Text("获取系统版本"),
+                  onPressed: () {
+                    initPlatformState();
+                  },
+                ),
+                Text('当前系统版本 : $_platformVersion\n'),
+                SizedBox(height: 30),
+                Text("加法计算器"),
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+
+                  children: <Widget>[
+                    SizedBox(
+                      width: 80,
+                      child: TextField(
+                        controller: _addNumber1Controller,
+                        keyboardType: TextInputType.number,
+                      ),
+                    ),
+                    Text("  +  ",style: TextStyle(fontSize: 26),),
+                    SizedBox(
+                      width: 80,
+                      child: TextField(
+                        controller: _addNumber2Controller,
+                        keyboardType: TextInputType.number,
+                      ),
+                    ),
+                    Text("  = ",style: TextStyle(fontSize: 26),),
+                  ],
+                ),
+                SizedBox(height: 30),
+                MaterialButton(
+                  color: Colors.amber,
+                  child: Text("结果等于"),
+                  onPressed: () {
+                    getAddResult();
+                  },
+                ),
+                Text(addResult),
+              ],
+            )),
       ),
     );
   }
