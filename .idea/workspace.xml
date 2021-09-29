@@ -10,12 +10,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="92502549-3ac6-4aae-ad78-4df27a214bb2" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/flutter_calc_plugin/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Dart_SDK.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Dart_SDK.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flutter_calc_plugin/.idea/flutter_calc_plugin.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flutter_calc_plugin/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flutter_calc_plugin/.idea/runConfigurations.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flutter_calc_plugin/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example/pubspec.lock" beforeDir="false" afterPath="$PROJECT_DIR$/example/pubspec.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pubspec.lock" beforeDir="false" afterPath="$PROJECT_DIR$/pubspec.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/android/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/src/main/kotlin/com/example/flutter_calc_plugin/FlutterCalcPlugin.kt" beforeDir="false" afterPath="$PROJECT_DIR$/android/src/main/kotlin/com/example/flutter_calc_plugin/FlutterCalcPlugin.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/android/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/example/android/app/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/android/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/example/android/app/src/main/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/android/app/src/main/kotlin/com/example/flutter_calc_plugin_example/MainActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/example/android/app/src/main/kotlin/com/example/flutter_calc_plugin_example/MainActivity.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/android/app/src/main/res/values/styles.xml" beforeDir="false" afterPath="$PROJECT_DIR$/example/android/app/src/main/res/values/styles.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/android/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/example/android/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flutter_calc_plugin/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/flutter_calc_plugin/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,7 +37,9 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1ynsksq06FliEvtLOLsMitt4sP0" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="showExcludedFiles" value="false" />
     <option name="showLibraryContents" value="true" />
@@ -89,25 +98,33 @@
     <option name="LAST_COMMIT_MESSAGE" value="整理插件代码" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="2401" height="375" key="GridCell.Tab.0.bottom" timestamp="1632899092564">
+    <state width="1599" height="350" key="GridCell.Tab.0.bottom" timestamp="1632905566319">
       <screen x="0" y="25" width="2560" height="1320" />
     </state>
-    <state width="2401" height="375" key="GridCell.Tab.0.bottom/0.25.2560.1320@0.25.2560.1320" timestamp="1632899092564" />
-    <state width="2401" height="375" key="GridCell.Tab.0.center" timestamp="1632899092564">
+    <state width="1599" height="350" key="GridCell.Tab.0.bottom/0.25.2560.1320@0.25.2560.1320" timestamp="1632905566319" />
+    <state width="1599" height="350" key="GridCell.Tab.0.center" timestamp="1632905566318">
       <screen x="0" y="25" width="2560" height="1320" />
     </state>
-    <state width="2401" height="375" key="GridCell.Tab.0.center/0.25.2560.1320@0.25.2560.1320" timestamp="1632899092564" />
-    <state width="2401" height="375" key="GridCell.Tab.0.left" timestamp="1632899092563">
+    <state width="1599" height="350" key="GridCell.Tab.0.center/0.25.2560.1320@0.25.2560.1320" timestamp="1632905566318" />
+    <state width="1599" height="350" key="GridCell.Tab.0.left" timestamp="1632905566318">
       <screen x="0" y="25" width="2560" height="1320" />
     </state>
-    <state width="2401" height="375" key="GridCell.Tab.0.left/0.25.2560.1320@0.25.2560.1320" timestamp="1632899092563" />
-    <state width="2401" height="375" key="GridCell.Tab.0.right" timestamp="1632899092564">
+    <state width="1599" height="350" key="GridCell.Tab.0.left/0.25.2560.1320@0.25.2560.1320" timestamp="1632905566318" />
+    <state width="1599" height="350" key="GridCell.Tab.0.right" timestamp="1632905566319">
       <screen x="0" y="25" width="2560" height="1320" />
     </state>
-    <state width="2401" height="375" key="GridCell.Tab.0.right/0.25.2560.1320@0.25.2560.1320" timestamp="1632899092564" />
+    <state width="1599" height="350" key="GridCell.Tab.0.right/0.25.2560.1320@0.25.2560.1320" timestamp="1632905566319" />
     <state x="935" y="391" key="RollbackChangesDialog" timestamp="1632899011133">
       <screen x="0" y="25" width="2560" height="1320" />
     </state>
     <state x="935" y="391" key="RollbackChangesDialog/0.25.2560.1320@0.25.2560.1320" timestamp="1632899011133" />
+    <state x="1376" y="403" width="602" height="490" key="find.popup" timestamp="1632904231857">
+      <screen x="0" y="25" width="2560" height="1320" />
+    </state>
+    <state x="1376" y="403" width="602" height="490" key="find.popup/0.25.2560.1320@0.25.2560.1320" timestamp="1632904231857" />
+    <state x="1342" y="307" width="670" height="676" key="search.everywhere.popup" timestamp="1632903914553">
+      <screen x="0" y="25" width="2560" height="1320" />
+    </state>
+    <state x="1342" y="307" width="670" height="676" key="search.everywhere.popup/0.25.2560.1320@0.25.2560.1320" timestamp="1632903914553" />
   </component>
 </project>

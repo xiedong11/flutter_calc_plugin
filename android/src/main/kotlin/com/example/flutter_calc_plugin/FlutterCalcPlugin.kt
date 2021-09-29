@@ -1,19 +1,15 @@
 package com.example.flutter_calc_plugin
 
+import io.flutter.embedding.engine.FlutterEngine
+import io.flutter.embedding.engine.plugins.FlutterPlugin
 import io.flutter.plugin.common.MethodCall
 import io.flutter.plugin.common.MethodChannel
 import io.flutter.plugin.common.MethodChannel.MethodCallHandler
 import io.flutter.plugin.common.MethodChannel.Result
-import io.flutter.plugin.common.PluginRegistry.Registrar
 
-class FlutterCalcPlugin : MethodCallHandler {
-    companion object {
-        @JvmStatic
-        fun registerWith(registrar: Registrar) {
-            val channel = MethodChannel(registrar.messenger(), "flutter_calc_plugin")
-            channel.setMethodCallHandler(FlutterCalcPlugin())
-        }
-    }
+class FlutterCalcPlugin : FlutterPlugin, MethodCallHandler  {
+    private lateinit var channel : MethodChannel
+
 
     override fun onMethodCall(call: MethodCall, result: Result) {
         if (call.method == "getPlatformVersion") {
@@ -25,5 +21,14 @@ class FlutterCalcPlugin : MethodCallHandler {
         } else {
             result.notImplemented()
         }
+    }
+
+    override fun onAttachedToEngine(flutterPluginBinding: FlutterPlugin.FlutterPluginBinding) {
+        channel = MethodChannel(flutterPluginBinding.binaryMessenger, "flutter_calc_plugin")
+        channel.setMethodCallHandler(this)
+    }
+
+    override fun onDetachedFromEngine(p0: FlutterPlugin.FlutterPluginBinding) {
+        channel.setMethodCallHandler(null)
     }
 }

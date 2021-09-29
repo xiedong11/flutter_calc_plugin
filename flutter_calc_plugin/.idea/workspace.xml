@@ -9,7 +9,15 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="92502549-3ac6-4aae-ad78-4df27a214bb2" name="Default Changelist" comment="" />
+    <list default="true" id="92502549-3ac6-4aae-ad78-4df27a214bb2" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../android/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../android/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../android/src/main/kotlin/com/example/flutter_calc_plugin/FlutterCalcPlugin.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../android/src/main/kotlin/com/example/flutter_calc_plugin/FlutterCalcPlugin.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../example/android/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../example/android/app/src/main/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../example/android/app/src/main/kotlin/com/example/flutter_calc_plugin_example/MainActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../example/android/app/src/main/kotlin/com/example/flutter_calc_plugin_example/MainActivity.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../example/android/app/src/main/res/values/styles.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../example/android/app/src/main/res/values/styles.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../example/android/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../example/android/build.gradle" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -18,9 +26,8 @@
   <component name="DefaultGradleProjectSettings">
     <option name="isMigrated" value="true" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[SerialNumber@CLB7N19105005151]" />
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="ProjectId" id="1ynsksq06FliEvtLOLsMitt4sP0" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -29,6 +36,7 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="dart.analysis.tool.window.force.activate" value="false" />
     <property name="dart.analysis.tool.window.visible" value="false" />
